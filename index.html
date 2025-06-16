@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EchoesOfEa</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="giris-ekrani">
-      <h1>EchoesOfEa</h1>
-      <input type="password" id="sifre" placeholder="Şifre" />
-      <button onclick="girisYap()">Giriş</button>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <title>EchoesOfEa | Giriş</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url("arka-plan.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .giris-kutusu {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+    h1 {
+      color: goldenrod;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #ccc;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      width: 250px;
+      text-align: center;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: goldenrod;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hata {
+      color: red;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="giris-kutusu">
+    <h1>EchoesOfEa</h1>
+    <p>Giriş için şifreyi gir</p>
+    <input type="password" id="sifre" placeholder="••••••••••">
+    <br>
+    <button onclick="girisYap()">Giriş Yap</button>
+    <div class="hata" id="hataMesaji">Hatalı şifre!</div>
+  </div>
 
-    <div id="ana-panel" style="display: none">
-      <h2>Hoş geldin Samet Efe Baydar</h2>
-      <p>✨ İçerik üretmek istediğin alanı seç:</p>
-      <button onclick="location.href='reels.html'">🎬 Reels</button>
-      <button disabled>📖 Kitap</button>
-      <button disabled>🎥 Video</button>
-      <button disabled>🖼️ Story</button>
-      <button disabled>📜 Lore</button>
-    </div>
-
-    <script src="script.js"></script>
-</html>
-<footer>
-  © 2025 Samet Efe Baydar
-</footer>
- </body>
+  <script>
+    function girisYap() {
+      const sifre = document.getElementById(\"sifre\").value;
+      const hata = document.getElementById(\"hataMesaji\");
+      if (sifre === \"250805Seb.\") {
