@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 50px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: gold;
+  color: black;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: goldenrod;
+}
+
+h2 {
+  color: #ffcc00;
+}
