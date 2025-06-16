@@ -1,32 +1,78 @@
+/* Arka plan ve yazı stilleri */
 body {
   margin: 0;
+  padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
   background-color: #000;
   color: #f5f5dc;
   text-align: center;
-  padding: 50px;
 }
 
-input, button {
+/* Başlık - EchoesOfEa */
+h1 {
+  font-size: 3em;
+  color: goldenrod;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Alt başlık */
+h2 {
+  color: #ffd700;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Giriş kutusu */
+input[type="password"] {
   padding: 10px;
-  margin: 10px;
   border: none;
   border-radius: 8px;
   font-size: 1em;
+  margin: 10px;
+  width: 200px;
 }
 
+/* Butonlar */
 button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
   background-color: gold;
   color: black;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: goldenrod;
+button:hover {
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  transform: scale(1.05);
 }
 
-h2 {
-  color: #ffcc00;
+/* Panel ve giriş geçişleri */
+#giris-ekrani, #ana-panel {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Çınar yaprağı */
+footer::after {
+  content: "  🍁";
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
