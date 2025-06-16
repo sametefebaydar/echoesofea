@@ -5,45 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EchoesOfEa | Panel</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       background-color: #000;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      padding: 20px;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 40px;
     }
     table {
-      width: 100%;
       border-collapse: collapse;
-      margin-bottom: 20px;
+      width: 100%;
+      table-layout: fixed;
     }
     th, td {
       border: 2px solid #fff;
       padding: 8px;
       text-align: center;
       font-weight: bold;
+      font-size: 15px;
     }
     th {
       background-color: #000;
       color: #fff;
     }
-    td {
-      background-color: #111;
-      color: #fff;
+    .heading {
+      font-size: 48px;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
     }
-    .title-row td {
-      font-size: 3em;
-      color: goldenrod;
-      border: none;
+    .subheading {
+      font-size: 28px;
+      text-align: center;
+      font-weight: bold;
+      padding: 0;
     }
-    .subtitle-row td {
-      font-size: 2em;
-      color: white;
-      border: none;
+    .right-align {
+      text-align: right;
     }
   </style>
 </head>
@@ -53,82 +51,40 @@
       <td rowspan="2">Kullanıcı adı</td>
       <td rowspan="2">gün/ay yıl</td>
       <td rowspan="2">saat</td>
-      <td colspan="3" class="title-row">EchoesOfEa</td>
-      <td>?</td>
-      <td>?</td>
-      <td colspan="2">KONTROL PANELİ AYARLAR</td>
-    </tr>
-    <tr class="subtitle-row">
-      <td colspan="7">son projeler</td>
+      <td colspan="3" class="heading">EchoesOfEa</td>
+      <td rowspan="2">KONTROL PANELİ AYARLAR</td>
     </tr>
     <tr>
-      <td>INSTAGRAM REELS</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
+      <td>?</td>
+      <td>?</td>
       <td>AY</td>
       <td>YIL</td>
     </tr>
-    <tr>
-      <td>INSTAGRAM STORY</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>INSTAGRAM GÖNDERİ</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>YOUTUBE SHORTS</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>UZUN VİDEO</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>TİKTOK GÖNDERİ</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td>proje ismi</td>
-      <td colspan="3">detayları</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>HİKAYE LORE</td>
-      <td colspan="2">YÖNLENDİR ME BUTONU</td>
-      <td></td>
-      <td colspan="3"></td>
-      <td></td>
-      <td></td>
-    </tr>
+  </table>
+
+  <div class="subheading">son projeler</div>
+
+  <table>
+    <tr><td>INSTAGRAM REELS</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>INSTAGRAM STORY</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>INSTAGRAM GÖNDERİ</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>YOUTUBE SHORTS</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>UZUN VİDEO</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>TIKTOK GÖNDERİ</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+    <tr><td>HİKAYE LORE</td><td>YÖNLENDİR ME BUTONU</td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
   </table>
 
   <table>
-    <tr><td colspan="3">içerik hesapları ve durumları</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-    <tr><td colspan="3">tüm hesapların toplam takipçi sayısı</td></tr>
+    <tr><td colspan="6">içerik hesapları ve durumları</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="6">tüm hesapların toplam takipçi sayısı</td></tr>
   </table>
 </body>
 </html>
+
