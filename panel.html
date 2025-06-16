@@ -3,124 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoesOfEa | Panel Taslak</title>
+  <title>EchoesOfEa | Panel</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       background-color: #000;
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
       padding: 20px;
     }
-    h1 {
-      color: goldenrod;
-      text-align: center;
-      font-size: 3em;
-      margin: 0;
-    }
-    h2 {
-      color: goldenrod;
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .table-container {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-bottom: 20px;
     }
     th, td {
-      border: 1px solid #444;
-      padding: 10px;
+      border: 2px solid #fff;
+      padding: 8px;
       text-align: center;
+      font-weight: bold;
     }
     th {
-      background-color: #111;
-      color: goldenrod;
-      font-weight: bold;
+      background-color: #000;
+      color: #fff;
     }
     td {
-      background-color: #1a1a1a;
-      color: #ddd;
+      background-color: #111;
+      color: #fff;
     }
-    .button {
-      padding: 6px 10px;
-      background-color: goldenrod;
-      color: black;
+    .title-row td {
+      font-size: 3em;
+      color: goldenrod;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
     }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #666;
-      font-size: 0.9em;
+    .subtitle-row td {
+      font-size: 2em;
+      color: white;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <h1>EchoesOfEa</h1>
-  <h2>son projeler</h2>
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Kullanıcı Adı</th>
-          <th>Gün/Ay Yıl</th>
-          <th>Saat</th>
-          <th>?</th>
-          <th>?</th>
-          <th>Kontrol Paneli Ayarlar</th>
-        </tr>
-      </thead>
-    </table>
+  <table>
+    <tr>
+      <td rowspan="2">Kullanıcı adı</td>
+      <td rowspan="2">gün/ay yıl</td>
+      <td rowspan="2">saat</td>
+      <td colspan="3" class="title-row">EchoesOfEa</td>
+      <td>?</td>
+      <td>?</td>
+      <td colspan="2">KONTROL PANELİ AYARLAR</td>
+    </tr>
+    <tr class="subtitle-row">
+      <td colspan="7">son projeler</td>
+    </tr>
+    <tr>
+      <td>INSTAGRAM REELS</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td>AY</td>
+      <td>YIL</td>
+    </tr>
+    <tr>
+      <td>INSTAGRAM STORY</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INSTAGRAM GÖNDERİ</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YOUTUBE SHORTS</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UZUN VİDEO</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TİKTOK GÖNDERİ</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td>proje ismi</td>
+      <td colspan="3">detayları</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HİKAYE LORE</td>
+      <td colspan="2">YÖNLENDİR ME BUTONU</td>
+      <td></td>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Tür</th>
-          <th>Yönlendir</th>
-          <th>Proje İsmi</th>
-          <th>Detayları</th>
-          <th>Ay</th>
-          <th>Yıl</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>INSTAGRAM REELS</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>INSTAGRAM STORY</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>INSTAGRAM GÖNDERİ</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>YOUTUBE SHORTS</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>UZUN VİDEO</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>TIKTOK GÖNDERİ</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-        <tr><td>HİKAYE LORE</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
-      </tbody>
-    </table>
-
-    <table>
-      <thead>
-        <tr><th colspan="2">İçerik Hesapları ve Durumları</th></tr>
-      </thead>
-      <tbody>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
-        <tr><td colspan="2">tüm hesapların toplam takipçi sayısı</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <footer>
-    © 2025 <span style="color:goldenrod">Samet Efe Baydar</span> 🍁
-  </footer>
+  <table>
+    <tr><td colspan="3">içerik hesapları ve durumları</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+    <tr><td colspan="3">tüm hesapların toplam takipçi sayısı</td></tr>
+  </table>
 </body>
 </html>
