@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoesOfEa | Panel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoesOfEa | Panel Taslak</title>
   <style>
     body {
       background-color: #000;
@@ -14,32 +14,42 @@
     h1 {
       color: goldenrod;
       text-align: center;
-      margin-bottom: 30px;
+      font-size: 3em;
+      margin: 0;
+    }
+    h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .table-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 30px;
     }
     th, td {
-      border: 1px solid #555;
+      border: 1px solid #888;
       padding: 10px;
       text-align: center;
     }
     th {
       background-color: #111;
-      color: #ffd700;
+      color: gold;
     }
     td {
       background-color: #1a1a1a;
     }
-    button {
-      padding: 6px 12px;
+    .button {
+      padding: 6px 10px;
       background-color: gold;
+      color: black;
       border: none;
       border-radius: 5px;
       font-weight: bold;
-      cursor: pointer;
     }
     footer {
       margin-top: 40px;
@@ -50,63 +60,63 @@
   </style>
 </head>
 <body>
-  <h1>EchoesOfEa - Son Projeler</h1>
+  <h1>EchoesOfEa</h1>
+  <h2>son projeler</h2>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Kullanıcı Adı</th>
+          <th>Gün/Ay Yıl</th>
+          <th>Saat</th>
+          <th colspan="2">?</th>
+          <th>Kontrol Paneli Ayarlar</th>
+        </tr>
+      </thead>
+    </table>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Tür</th>
-        <th>Yönlendir</th>
-        <th>Proje İsmi</th>
-        <th>Detayları</th>
-        <th>Tarih</th>
-        <th>Saat</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>İNSTAGRAM REELS</td>
-        <td><button>Yönlendir</button></td>
-        <td>Melkor'un Düşüşü</td>
-        <td>Valar Savaşı anlatımı</td>
-        <td>16/06/2025</td>
-        <td>08:53</td>
-      </tr>
-      <tr>
-        <td>TİKTOK GÖNDERİ</td>
-        <td><button>Yönlendir</button></td>
-        <td>Elflerin Uyanışı</td>
-        <td>Oromë'nin gelişi sahnesi</td>
-        <td>17/06/2025</td>
-        <td>11:30</td>
-      </tr>
-      <!-- Ek satırlar burada olacak -->
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Tür</th>
+          <th>Yönlendir</th>
+          <th>Proje İsmi</th>
+          <th>Detayları</th>
+          <th>Ay</th>
+          <th>Yıl</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>INSTAGRAM REELS</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>INSTAGRAM STORY</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>INSTAGRAM GÖNDERİ</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>YOUTUBE SHORTS</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>UZUN VİDEO</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>TIKTOK GÖNDERİ</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+        <tr><td>HİKAYE LORE</td><td><button class="button">Yönlendir</button></td><td>proje ismi</td><td>detayları</td><td></td><td></td></tr>
+      </tbody>
+    </table>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Platform</th>
-        <th>Hesap İsmi ve Giriş Bilgileri</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Instagram</td>
-        <td>kullaniciadi | ********</td>
-      </tr>
-      <tr>
-        <td>Youtube</td>
-        <td>kullaniciadi | ********</td>
-      </tr>
-      <!-- Diğer hesaplar -->
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr><th colspan="2">İçerik Hesapları ve Durumları</th></tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">hesabın olduğu platformun ismi ve giriş bilgileri</td></tr>
+        <tr><td colspan="2">tüm hesapların toplam takipçi sayısı</td></tr>
+      </tbody>
+    </table>
+  </div>
 
   <footer>
-    Tüm hesapların toplam takipçi sayısı: 0000 🍁<br>
-    © 2025 Samet Efe Baydar
+    © 2025 Samet Efe Baydar 🍁
   </footer>
 </body>
 </html>
